@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Header from '../components/Header'
-import Content from '../components/Content'
+import Header from './Header'
+import Resources from './Resources'
 
 export default function Layout(){
 return (
@@ -8,7 +8,7 @@ return (
     <div id="center-box">
         <Header></Header>
         <div id="main-content">
-            <Content></Content>
+            <Resources></Resources>
             <ul>
                 <li><a href="https://www.w3schools.com/html/">W3Schools</a></li>
                 <li><a href="https://html.spec.whatwg.org/multipage/">HTML Living standard</a></li>

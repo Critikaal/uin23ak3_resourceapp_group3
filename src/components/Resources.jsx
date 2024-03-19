@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
 
-export default function Content () {
+export default function Resources () {
     return(
         <>
         <h2>HTML</h2>
