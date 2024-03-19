@@ -13,7 +13,7 @@ function App() {
       
         <Routes>
           <Route path='/' element={<Layout/>}/>
-          <Route path=':slug' element={<Content/>}></Route>
+          <Route path=':slug' element={<Resources/>}></Route>
         </Routes>        
       
     </BrowserRouter>
