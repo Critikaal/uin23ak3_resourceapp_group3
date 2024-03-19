@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import Header from './Header'
 import Resources from './Resources'
+import Links from "./Links";
+import { resources } from "../assets/ressurser";
 
 export default function Layout(){
 return (
@@ -9,11 +11,7 @@ return (
         <Header></Header>
         <div id="main-content">
             <Resources></Resources>
-            <ul>
-                <li><a href="https://www.w3schools.com/html/">W3Schools</a></li>
-                <li><a href="https://html.spec.whatwg.org/multipage/">HTML Living standard</a></li>
-                <li><a href="https://html.com/">HTML.com Tutorials</a></li>
-            </ul>
+            <Links/>
         </div>
     </div>
 
@@ -21,5 +19,4 @@ return (
     <script src="./assests/ressurser.js"></script>
     </>
 )
-
 }
