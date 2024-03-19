@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Layout from './components/Layout'
-import Content from './components/Content'
+import Content from './components/Resources'
 
 import './App.css'
 
