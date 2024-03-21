@@ -8,7 +8,7 @@ export default function Layout({ resource }) {
   // lager en aktiv kategori som blir brukt til å skrive ut riktig data fra arrayen ressurser.js. Og useState er bare for å sette en default kategori
   const [activeCategory, setActiveCategory] = useState("HTML");
 
-  // Endrer sånn at kategorien blir satt til riktig i forhold til hvilken som blir trykket på.
+  // Endrer sånn at kategorien blir satt til riktig kategori i forhold til hvilken som blir trykket på.
   const handleCategoryChange = (category) => {
     setActiveCategory(category);
   };
