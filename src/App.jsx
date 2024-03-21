@@ -3,7 +3,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Layout from './components/Layout'
 import Resources from './components/Resources'
 
-import './App.css'
+import './styles/main.scss'
 
 function App() {
   const [count, setCount] = useState(0)

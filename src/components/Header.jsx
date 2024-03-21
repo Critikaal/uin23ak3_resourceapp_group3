@@ -5,7 +5,7 @@ export default function Header () {
         <>
         <nav>
             <ul id="tabs">
-                <li><Link to="/HTML">HTML</Link></li>
+                <li><Link to="/HTML" className="active">HTML</Link></li>
                 <li><Link to="/CSS">CSS</Link></li>
                 <li><Link to="/JavaScript">JavaScript</Link></li>
                 <li><Link to="/React">React</Link></li>
