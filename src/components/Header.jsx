@@ -8,14 +8,15 @@ export default function Header ({activeCategory, handleCategoryChange}) {
         <>
         <nav>
             <ul id="tabs">
-              {/* Mapping over resources to create buttons */}
+              {/* Mapper ut fra resourse for å lage knapper */}
               {resources.map((resource, index) => (
                 <li key={index}>
                   <button
+                    // Setter klassen active på kategorien som er lik det som står i active category
                     className={activeCategory === resource.category ? 'active' : ''}
-                    onClick={() => handleCategoryChange(resource.category)}
-                    data-category={resource.category}
-                  >
+                    // onClicken gjør at den endrer den aktive kategorien til den brukeren trykker på.
+                    onClick={() => handleCategoryChange(resource.category)}>
+                    {/* Teksten som står i selve knappen på nettsiden. */}
                     {resource.category}
                   </button>
                 </li>
