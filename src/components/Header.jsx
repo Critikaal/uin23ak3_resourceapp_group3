@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
 import { resources } from "../assets/ressurser";
-import { useState } from "react";
 
 export default function Header({ activeCategory, handleCategoryChange }) {
   return (

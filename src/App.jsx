@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Layout from './components/Layout'
 import Resources from './components/Resources'
@@ -6,8 +5,6 @@ import Resources from './components/Resources'
 import './styles/main.scss'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <BrowserRouter>
       

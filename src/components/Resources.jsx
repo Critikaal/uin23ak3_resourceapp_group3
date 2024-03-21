@@ -1,7 +1,5 @@
 // Importerer nødvendige moduler fra React-pakken
-import { useParams } from "react-router-dom"; // Importerer useParams hook fra react-router-dom
 import { resources } from "../assets/ressurser"; // Importerer ressursene fra en fil
-import { useState } from "react"; // Importerer useState hook fra React
 
 // Definerer en funksjonell komponent kalt Resources med en props kalt activeCategory
 export default function Resources({ activeCategory }) {
