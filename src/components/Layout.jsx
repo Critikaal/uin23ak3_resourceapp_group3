@@ -1,6 +1,7 @@
 import Header from './Header'
 import Resources from './Resources'
 import Links from "./Links";
+import { useState } from "react";
 
 export default function Layout({ resource }) {
   // lager en aktiv kategori som blir brukt til å skrive ut riktig data fra arrayen ressurser.js. Og useState er bare for å sette en default kategori
