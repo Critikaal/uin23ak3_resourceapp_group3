@@ -64,6 +64,9 @@ ul {
     height: 400px;
     overflow: auto;
     box-sizing: border-box;
+    ul {
+        padding-left: 3rem;
+    }
 }
 
 #tabs {
