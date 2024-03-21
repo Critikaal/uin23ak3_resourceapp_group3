@@ -64,6 +64,10 @@ ul {
     height: 400px;
     overflow: auto;
     box-sizing: border-box;
+    width: 100%;
+    p {
+      width: 1000px
+    };
     ul {
         padding-left: 3rem;
     }
@@ -74,10 +78,10 @@ ul {
     justify-content: space-between;
     position: relative;
     list-style: none;
-    padding-bottom: 1.5rem;
+    // padding-bottom: 1.5rem;
 }
 
-nav ul li a {
+nav ul li button {
     font-family: $font-family;
     font-weight: 700;
     background-color: $button-background;
