@@ -1,12 +1,26 @@
 import { useParams } from "react-router-dom"
 import {resources} from "../assets/ressurser"
+import { useState } from "react";
 
-export default function Resources () {
-    return(
-        <>
-        <h2>HTML</h2>
-            <p>HTML står for HyperText Markup Language, og er et strukturspråk som brukes for å lage strukturer til nettside- og applikasjonsgrensesnitt.</p>
-        </>
-    )
-}
+export default function Resources ({activeCategory}) {
+    
+    return (
+          <>
+            {/* Displaying content based on activeCategory */}
+            {resources.map((resource, index) => (
+              <div key={index} style={{ display: activeCategory === resource.category ? 'block' : 'none' }}>
+                <h2>{resource.category}</h2>
+                <p>{resource.text}</p>
+                <ul>
+                  {resource.sources.map((source, idx) => (
+                    <li key={idx}>
+                      <a href={source.url}>{source.title}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </>
+      );
+    };
 

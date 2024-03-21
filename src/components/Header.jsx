@@ -1,17 +1,27 @@
 import { Link } from "react-router-dom";
+import { resources } from "../assets/ressurser";
+import { useState } from "react";
 
-export default function Header () {
+export default function Header ({activeCategory, handleCategoryChange}) {
+ 
     return(
         <>
         <nav>
             <ul id="tabs">
-                <li><Link to="/HTML">HTML</Link></li>
-                <li><Link to="/CSS">CSS</Link></li>
-                <li><Link to="/JavaScript">JavaScript</Link></li>
-                <li><Link to="/React">React</Link></li>
-                <li><Link to="/Sanity">Sanity and headless CMS</Link></li>
+              {/* Mapping over resources to create buttons */}
+              {resources.map((resource, index) => (
+                <li key={index}>
+                  <button
+                    className={activeCategory === resource.category ? 'active' : ''}
+                    onClick={() => handleCategoryChange(resource.category)}
+                    data-category={resource.category}
+                  >
+                    {resource.category}
+                  </button>
+                </li>
+              ))}
             </ul>
-        </nav>
+          </nav>
         </>
     )
 }
